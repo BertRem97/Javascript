@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+        const myCar =
+        {
+            model: "Mercedes",
+            buildyear: 2024,
+            color: "black",
+            is4x4: false
+        };
+
+        let prop = myCar;
+        let va = "color";
+        let sale = "forSale";
+
+        console.log(myCar);
+        prop[va] = "pink";
+        console.log(prop[va]);
+        prop["forSale"] = false;
+        console.log(prop["forSale"]);
+        prop.is4x4 = true;
+
+        console.log(myCar);
+
+
+    </script>
+</head>
