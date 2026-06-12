@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<body>
+    <script>
+        let userage = prompt("Voer je leeftijd in: ");
+        userage = Number(userage);
+        let message = null;
+
+        if(userage >= 21) {
+            message = "Je bent gemachtigd om binnen te komen en alcohol te drinken";
+        }
+        else if(userage >= 19) {
+            message = "Je bent gemachtigd om binnen te komen maar je mag geen alcohol drinken";
+        }
+        else {
+            message = "Je bent niet welkom";
+        }
+        
+        console.log(message);
+        
+    </script>
+</body>
