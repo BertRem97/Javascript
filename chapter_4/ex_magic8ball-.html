@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<body>
+    <script>
+        let val = Math.random();
+        let user_input = prompt("Voer getal in: ");
+
+        val = (val * 10) / 2;
+        val = Math.floor(val);
+        console.log(val);
+    
+        switch(user_input) {
+            case val:
+                console.log("Nummer is: ", val);
+            default:
+                console.log("Je nummer komt niet overeen");
+        }
+
+    </script>
+</body>
