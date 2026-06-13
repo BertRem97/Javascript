@@ -2,19 +2,27 @@
 
 <body>
     <script>
-        let val = Math.random();
-        let user_input = prompt("Voer getal in: ");
+        let val = Math.random() * 6;
+        let user_input = prompt("Stel je vraag:  ");
+        let answer = "Er is iets misgegaan";
 
-        val = (val * 10) / 2;
         val = Math.floor(val);
-        console.log(val);
-    
-        switch(user_input) {
-            case val:
-                console.log("Nummer is: ", val);
+
+        switch(val) {
+            case 0:
+                answer = "Kleine kans";
+                break;
+            case 1:
+                answer = "Er bestaat een kleine mogelijkheid";
+                break;
+            case 2:
+                answer = "51% kans!";
+                break;
             default:
-                console.log("Je nummer komt niet overeen");
+                answer = "Daar heb ik geen idee van";
         }
+
+        console.log(`Je vroeg me ${user_input}` + "Mijn gedacht is: " + answer);
 
     </script>
 </body>
