@@ -1,0 +1,19 @@
+<!DOCTYPE>
+
+<body>
+    <script>
+        let name = prompt("Voer een naam in: ");
+        let message = "Er is een probleem opgetreden";
+
+        switch(name) {
+            case "Kate":
+            case "Peter":
+                message = "Je bent terug te vinden in onze database";
+                break;
+            default:
+                message = "Deze naam komt niet terug in onze database";
+        }
+
+        console.log(message)
+    </script>
+</body>

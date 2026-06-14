@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<body>
+    <script>
+        let possibilities = ["Rock", "Paper", "Scissors"];
+        let choice = prompt("Maak je keuze: Rock, Paper of Scissors: ");
+        let error_m = "Keuze niet gevonden" + choice;
+        let num = Math.floor(Math.random() * 3);
+        var pc_choice = possibilities[num];
+        console.log(pc_choice);
+        
+
+        choice = possibilities.includes(choice)? possibilities.indexOf(choice): null;
+        if (possibilities[choice] != null) {
+            var user_choice = possibilities[choice];
+            let choices = [pc_choice, user_choice];
+    
+            var message = "Er is een fout opgetreden";
+            switch(true) {
+                case choices[0] === "Rock" && choices[1] === "Scissors":
+                case choices[0] === "Scissors" && choices[1] === "Paper":
+                case choices[0] === "Paper" && choices[1] === "Rock":
+                    message = "Computer wins, better luck next time!";
+                    break;
+                
+                case choices[0] === "Scissors" && choices[1] === "Rock":
+                case choices[0] === "Paper" && choices[1] === "Scissors":
+                case choices[0] === "Rock" && choices[1] === "Paper":
+                    message = "User wins! Congrats!";
+                    break;
+                
+                default:
+                    message = "Niemand wint";
+            }
+
+            console.log(message);
+        }
+        else {
+            console.log(error_m)
+        }
+
+
+        
+    </script>
+</body>
