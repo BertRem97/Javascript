@@ -8,11 +8,14 @@
 
         console.log(random_n);
         
-        while(!correct_answer) {
+        do {
             let user_input = prompt("Raad het nummer tussen 1 en " + max_val);
-            Number(user_input)
+            user_input = Number(user_input)
             if (user_input === random_n) {
-                correct_number = true;
+                correct_answer = true;
+                correct_answer = user_input;
+                console.log(correct_answer);
+                console.log(`YES ${user_input} is correct!`);
             }
             else if (user_input > random_n) {
                 console.log(`Nummer ${user_input} is te hoog`);
@@ -20,14 +23,8 @@
             else if (user_input < random_n) {
                 console.log(`Nummer ${user_input} is te laag`);
             }
-            
-        }
 
-        correct_answer = user_input;
-        console.log(correct_answer);
-        console.log(`YES ${user_input} is correct!`);
-        
-
+        } while(!correct_answer); 
         
 
     </script>
