@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<body>
+    <script>
+        let max_val = 5;
+        let random_n = Math.floor(Math.random() * 5);
+        let correct_answer = false;
+
+        console.log(random_n);
+        
+        while(!correct_answer) {
+            let user_input = prompt("Raad het nummer tussen 1 en " + max_val);
+            Number(user_input)
+            if (user_input === random_n) {
+                correct_number = true;
+            }
+            else if (user_input > random_n) {
+                console.log(`Nummer ${user_input} is te hoog`);
+            }
+            else if (user_input < random_n) {
+                console.log(`Nummer ${user_input} is te laag`);
+            }
+            
+        }
+
+        correct_answer = user_input;
+        console.log(correct_answer);
+        console.log(`YES ${user_input} is correct!`);
+        
+
+        
+
+    </script>
+</body>
